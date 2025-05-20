@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        input {
+            background-color: #a5d70f;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="username" placeholder="username" style="background: #a5d70f; font-size: 20px;">
+
+    <script>
+        let inputBox = document.getElementById("username");
+        let styles = window.getComputedStyle(inputBox);
+        console.log("Background color:", styles.backgroundColor);
+        console.log("Font size:", styles.fontSize);
+    </script>
+</body>
+</html>
